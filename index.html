@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>修改属性——hkx</title>
+    <script>
+      let flag=1;
+      function changePic(){
+        let myImg=document.getElementsByTagName("img")[0];
+        if (flag){
+            myImg.setAttribute("src","2.webp");
+            flag=0;
+        }
+        else{
+            myImg.setAttribute("src","1.webp")  
+            flag = 1;
+        }
+      }
+
+    </script>
+    
+</head>
+<body>
+    <img src="1.webp" onclick = "changePic()" alt="">
+</body>
+</html>
